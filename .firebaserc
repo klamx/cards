@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tarjeta-credito-3c211": {
+      "hosting": {
+        "TarjetaCredito": [
+          "tarjeta-credito-3c211"
+        ]
+      }
+    }
+  }
+}

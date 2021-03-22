@@ -1,0 +1,55 @@
+<div class="card mt-3 mt-md-0">
+  <div class="card-body pt-0">
+    <div class="fix mb-2">
+      <h5 class="text-center">Listar Tarjetas</h5>
+    </div>
+    <div class="row mt-2">
+      <div class="list-group">
+        <div *ngFor="let tarjeta of listTarjetas" class="list-group-item lista">
+          <p class="">{{ tarjeta.titular }}</p>
+          <p class="center">{{ tarjeta.numeroTarjeta }}</p>
+          <p class="center">{{ tarjeta.fechaExpiracion }}</p>
+          <p class="boton"
+            ><i
+              (click)="editarTarjeta(tarjeta)"
+              class="fas fa-edit text-info"
+            ></i>
+            <i
+              (click)="eliminarTarjeta(tarjeta.id)"
+              class="fas fa-trash text-danger"
+            ></i>
+          </p>
+          <span> </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="card mt-3 mt-md-0">
+  <div class="card-body pt-0">
+    <div class="fix mb-2">
+      <h5 class="text-center">Listar Tarjetas</h5>
+    </div>
+    <table class="table mt-2">
+      <tbody>
+        <tr *ngFor="let tarjeta of listTarjetas">
+          <td>{{ tarjeta.titular }}</td>
+          <td>{{ tarjeta.numeroTarjeta }}</td>
+          <td>{{ tarjeta.fechaExpiracion }}</td>
+          <td>
+            <i
+              (click)="editarTarjeta(tarjeta)"
+              class="fas fa-edit text-info"
+            ></i>
+          </td>
+          <td>
+            <i
+              (click)="eliminarTarjeta(tarjeta.id)"
+              class="fas fa-trash text-danger"
+            ></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div> -->
